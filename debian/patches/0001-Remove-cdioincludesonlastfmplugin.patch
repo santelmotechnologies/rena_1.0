@@ -1,0 +1,27 @@
+From 4bf6abd1ff285d581384d451bf157a5f39ddae6f Mon Sep 17 00:00:00 2001
+From: Matias De lellis <mati86dl@gmail.com>
+Date: Thu, 22 Oct 2015 15:28:15 -0300
+Subject: [PATCH] Remove cdio includes on lastfm plugin
+
+---
+ plugins/lastfm/pragha-lastfm-plugin.c | 4 ----
+ 1 file changed, 4 deletions(-)
+
+diff --git a/plugins/lastfm/pragha-lastfm-plugin.c b/plugins/lastfm/pragha-lastfm-plugin.c
+index 91a2c24..1105da4 100644
+--- a/plugins/lastfm/pragha-lastfm-plugin.c
++++ b/plugins/lastfm/pragha-lastfm-plugin.c
+@@ -30,10 +30,6 @@
+ #include <gmodule.h>
+ #include <gtk/gtk.h>
+ 
+-#include <cdio/paranoia/cdda.h>
+-#include <cdio/cd_types.h>
+-#include <cddb/cddb.h>
+-
+ #include <libpeas/peas.h>
+ 
+ #include "src/pragha.h"
+-- 
+2.1.4
+
